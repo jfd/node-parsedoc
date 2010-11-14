@@ -1,0 +1,24 @@
+parsedoc
+========
+
+**Parsedoc** is docstring extractor written for Node.js. The module can 
+be imported to existing projects or run as a stand-alone command-line 
+utility.
+
+Quick example (using the comamnd-line utility):
+
+    parsedoc.js -r lib > docs/api.md
+
+
+The example above extracts all docstring comments from parsedoc.js and 
+pipes them to a new file called `docs/api.md`.
+  
+ 
+### parseFile(path, [encoding=utf8], [options={}], [callback])
+
+Parses all doc-comments in specified ´path´.
+ 
+### parse(str, [options={}])
+
+Parses all doc-comments in specified ´str´.
+ 
